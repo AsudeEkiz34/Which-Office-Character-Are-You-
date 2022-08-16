@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="office" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-PG-u4h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="908"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="R7D-fw-1TB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="800"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Office Character Are You?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jO2-JB-ufy" userLabel="Title">
+                                        <rect key="frame" x="39" y="0.0" width="336" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="TUF-4n-DnZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solve the quiz, find the answer!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJZ-rj-7SV" userLabel="questionLabel">
+                                        <rect key="frame" x="57" y="110" width="300" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Ebp-ht-cnU"/>
+                                            <constraint firstAttribute="height" constant="200" id="eMp-gE-jao"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                        <color key="textColor" red="1" green="0.96078431369999995" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dunder" translatesAutoresizingMaskIntoConstraints="NO" id="o4O-2s-xhJ" userLabel="characterView">
+                                        <rect key="frame" x="74" y="380" width="266.5" height="260"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="260" id="kgT-Ck-6m5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vpA-IP-dnd" userLabel="Buttons">
+                                        <rect key="frame" x="77" y="710" width="260" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZv-yT-90o" userLabel="yesButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="90"/>
+                                                <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="N4k-7X-2H8"/>
+                                                    <constraint firstAttribute="height" constant="90" id="qCT-9Y-sCS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="17"/>
+                                                <state key="normal" title="YES">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ISH-Hv-9Zy"/>
+                                                    <action selector="yesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPf-kD-2b8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-LP-mQ0" userLabel="noButton">
+                                                <rect key="frame" x="140" y="0.0" width="120" height="90"/>
+                                                <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="DLx-KB-f3x"/>
+                                                    <constraint firstAttribute="height" constant="90" id="Q5G-lC-g45"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="19"/>
+                                                <state key="normal" title="NO">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRL-Qv-vl0"/>
+                                                    <action selector="noButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27s-qJ-r58"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R7D-fw-1TB" secondAttribute="bottom" constant="30" id="6TA-oc-L30"/>
+                            <constraint firstItem="R7D-fw-1TB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7XK-rP-2fu"/>
+                            <constraint firstItem="sBa-PG-u4h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IOV-dJ-zxb"/>
+                            <constraint firstItem="sBa-PG-u4h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JW9-fi-eHD"/>
+                            <constraint firstItem="sBa-PG-u4h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bqs-xF-CG7"/>
+                            <constraint firstAttribute="bottom" secondItem="sBa-PG-u4h" secondAttribute="bottom" id="jdF-KG-YQJ"/>
+                            <constraint firstItem="R7D-fw-1TB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s7B-w1-KUC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7D-fw-1TB" secondAttribute="trailing" id="x1k-0w-aRD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="characterView" destination="o4O-2s-xhJ" id="8An-Hg-hxo"/>
+                        <outlet property="questionLabel" destination="xJZ-rj-7SV" id="EoT-dg-wAO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="126" height="214"/>
+        <image name="dunder" width="266.5" height="167"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
