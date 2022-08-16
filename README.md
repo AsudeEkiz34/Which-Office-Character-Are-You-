@@ -1,5 +1,7 @@
 # Which-Office-Character-Are-You-
-Character test application written in Swift
+Character test application written in Swift.
+
+
 Some screenshots from the application are attached.
 
 ![1](https://user-images.githubusercontent.com/67782476/184995669-c3bc163c-da65-4eee-8611-63b8321957eb.png)
