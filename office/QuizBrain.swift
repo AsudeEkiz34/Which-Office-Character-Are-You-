@@ -121,20 +121,4 @@ struct QuizBrain {
     
     
 }//end of the struct
-   
-  
-    
-    
-
-
-
-
-
-
-    
-    
-
-
-
-    
 
